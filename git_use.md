@@ -111,3 +111,18 @@ index 9a9ca23..374129b 100644
 
 ~~~
 
+​		4.版本回溯与日志查看
+
+```
+查看每次的提交日志
+git log
+
+查看所有的输入过的命令
+git reflog
+
+Git有个Head指针指向当前的版本，只需要更改Head指向不同的版本，即可迅速实现版本跳跃。
+Head^代表当前版本的前一个版本，如若想要跳跃到之后的版本，可以通过Git Reflog命令查询版本号
+git reset --hard Head^^
+git reset --hard 8d59de5
+```
+
