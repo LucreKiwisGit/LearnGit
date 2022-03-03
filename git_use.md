@@ -154,3 +154,45 @@ git commmit --m "删除文件"
 
 ```
 
+### 三、远程仓库（GitHub)
+
+1. ​	创建SSH Key
+
+   ​	进入到用户文件主目录，打开Git Bash。
+
+   ```
+   $ ssh-keygen -t rsa -C "lucrekiwis@gmail.com"
+   （之后一路回车即可）
+   Generating public/private rsa key pair.
+   Enter file in which to save the key (/c/Users/27245/.ssh/id_rsa):
+   Created directory '/c/Users/27245/.ssh'.
+   Enter passphrase (empty for no passphrase):
+   Enter same passphrase again:
+   Your identification has been saved in /c/Users/27245/.ssh/id_rsa
+   Your public key has been saved in /c/Users/27245/.ssh/id_rsa.pub
+   The key fingerprint is:
+   SHA256:sqtv80Ks8LCzHaI46UnaSTBSe/V5oIykVG7+479SEp0 lucrekiwis@gmail.com
+   The key's randomart image is:
+   +---[RSA 3072]----+
+   |    .            |
+   |   o             |
+   |  o + ....       |
+   | o * +.oEo       |
+   |+ o +.+.S .      |
+   |.oo. .+o..       |
+   | oo=.o+o         |
+   |*+++oo=o         |
+   |=++oo++*+.       |
+   +----[SHA256]-----+
+   
+   ```
+
+   
+
+2. 添加SSH key到GitHub账号
+
+   打开用户目录里的.ssh文件目录中的id_rsa文件，复制内容至GitHub账号里的SSH设置。
+
+3. 创建远程仓库
+
+   
